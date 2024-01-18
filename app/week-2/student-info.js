@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const StudentInfo = () => {
   return (
@@ -6,7 +7,9 @@ const StudentInfo = () => {
       <p>My name is Gurjagjot Singh Waraich</p>
       <p>
         my github repository link is:
-        https://github.com/JotWaraich/cprg306-assignments
+        <Link href="https://github.com/JotWaraich/cprg306-assignments">
+          https://github.com/JotWaraich/cprg306-assignments
+        </Link>
       </p>
     </div>
   );
