@@ -7,9 +7,10 @@ const page = () => {
     <div className="flex justify-center items-center flex-col gap-4">
       <h1>Shopping List</h1>
       <div className="ml-20 ">
-        {object.map((item) => {
+        {object.map((item, index) => {
           return (
             <Item
+              key={index}
               name={item.name}
               quantity={item.quantity}
               category={item.category}
