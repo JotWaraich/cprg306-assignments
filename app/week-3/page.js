@@ -10,7 +10,7 @@ const page = () => {
         {object.map((item) => {
           return (
             <Item
-              key={item.name}
+              key={item.id}
               name={item.name}
               quantity={item.quantity}
               category={item.category}
