@@ -27,7 +27,7 @@ const Newitem = () => {
         onSubmit={handleSubmit}
         className="flex justify-center items-center flex-col gap-4"
       >
-        <div className="border border-gray-700 px-16 py-6 rounded rounded-md border-4 bg-[#0f172a]">
+        <div className="border-gray-700 px-16 py-6 rounded-md border-4 bg-[#0f172a]">
           <div className="min-w-96 mb-5">
             <input
               type="text"
