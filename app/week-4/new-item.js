@@ -47,6 +47,7 @@ const Newitem = () => {
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value) || values(e)}
                 max={99}
+                required
               />
             </div>
             <div className="">
