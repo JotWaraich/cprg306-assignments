@@ -22,7 +22,7 @@ const Newitem = () => {
   };
 
   return (
-    <div>
+    <div className="mt-5 bg-gradient-to-t">
       <form
         onSubmit={handleSubmit}
         className="flex justify-center items-center flex-col gap-4"
@@ -32,7 +32,7 @@ const Newitem = () => {
             <input
               type="text"
               placeholder="Name"
-              className="text-black w-full rounded-md p-2"
+              className="text-white w-full rounded-md p-2 text-sm ring-1 ring-slate-900/10 shadow-sm  focus:outline-none focus:ring-2 focus:ring-pink-500 caret-pink-500 dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:focus:ring-2 dark:focus:ring-pink-500 dark:focus:bg-slate-900f"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -43,7 +43,7 @@ const Newitem = () => {
               <input
                 type="number"
                 placeholder="Quantity"
-                className="text-black w-20 rounded-md p-2"
+                className="text-white w-20 rounded-md p-2 text-sm ring-1 ring-slate-900/10 shadow-sm  focus:outline-none focus:ring-2 focus:ring-pink-500 caret-pink-500 dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:focus:ring-2 dark:focus:ring-pink-500 dark:focus:bg-slate-900f"
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value) || values(e)}
                 max={99}
@@ -53,7 +53,7 @@ const Newitem = () => {
               <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
-                className="text-black  rounded-md p-2"
+                className="text-white  rounded-md p-2 text-sm ring-1 ring-slate-900/10 shadow-sm  focus:outline-none focus:ring-2 focus:ring-pink-500 caret-pink-500 dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:focus:ring-2 dark:focus:ring-pink-500 dark:focus:bg-slate-900f"
               >
                 <option value="category" disabled>
                   Category
