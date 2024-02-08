@@ -21,6 +21,14 @@ export default function Home() {
             Week 3
           </Link>
         </div>
+        <div>
+          <Link
+            href="/week-4"
+            className="w-44 border border-blue-600 bg-blue-600 rounded-md p-2"
+          >
+            Week 4
+          </Link>
+        </div>
       </div>
     </div>
   );

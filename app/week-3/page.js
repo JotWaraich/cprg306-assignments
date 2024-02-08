@@ -5,8 +5,8 @@ import object from "./item-list";
 const page = () => {
   return (
     <div className="flex justify-center items-center flex-col gap-4">
-      <h1>Shopping List</h1>
-      <div className="flex flex-col gap-4 ml-20 gap">
+      <h1 className="text-5xl my-4">Shopping List</h1>
+      <div className="flex flex-col gap-4">
         {object.map((item, index) => {
           return (
             <Item
