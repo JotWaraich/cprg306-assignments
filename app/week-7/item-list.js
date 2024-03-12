@@ -20,7 +20,7 @@ const ItemList = ({ items, onItemSelect }) => {
         key={value}
         onClick={() => setSortby(value)}
         style={{ backgroundColor: sortby === value ? "#87CEEB" : "#fff" }}
-        className="bg-lightblue p-1 m-2 w-28"
+        className="bg-lightblue p-1 m-2 w-28 text-black"
       >
         {label}
       </button>
