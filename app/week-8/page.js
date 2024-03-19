@@ -49,7 +49,7 @@ export default function page() {
               Sign in with GitHub
             </button>
             <button
-              className="text-white p-2 m-2 rounded-md bg-[#555555] flex flex-row w-80 gap-4 text-[25px]"
+              className="text-white p-2 m-2 rounded-md bg-blue-700 flex flex-row w-80 gap-4 text-[25px]"
               onClick={signInGoogle}
             >
               <BsGoogle className="mt-1 ml-4" />
