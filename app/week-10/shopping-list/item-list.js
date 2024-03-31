@@ -6,11 +6,12 @@ const ItemList = ({ items, onItemSelect }) => {
   const [sortby, setSortby] = useState("name");
 
   const sortedItems = [...items].sort((a, b) => {
-    if (sortby === "name") {
+    if (sortby === "name" && a.name && b.name) {
       return a.name.localeCompare(b.name);
-    } else if (sortby === "category") {
+    } else if (sortby === "category" && a.category && b.category) {
       return a.category.localeCompare(b.category);
     }
+
     return 0;
   });
 
