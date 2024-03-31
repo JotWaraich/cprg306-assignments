@@ -15,7 +15,10 @@ export async function getItems(userId) {
 
 export async function addItem(userId, item) {
   const docRef = await addDoc(collection(db, `users/${userId}/items`), {
-    item,
+    id: item.id,
+    name: item.name,
+    category: item.category,
+    quantity: item.quantity,
   });
   console.log("Item is created with ID: ", docRef.id);
 }
